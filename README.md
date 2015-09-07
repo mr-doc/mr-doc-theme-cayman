@@ -1,6 +1,6 @@
 # Cayman theme
 
-Cayman is a clean, responsive theme for [Doxx](https://github.com/FGRibreau/doxx) and a fork from [Jason Long's Cayman](https://github.com/jasonlong/cayman-theme). This theme is available as an option if you use `--template 'cayman'` or `-T 'cayman'`.
+Cayman is a clean, responsive theme for [Doxx](https://github.com/FGRibreau/doxx) and a fork from [Jason Long's Cayman](https://github.com/jasonlong/cayman-theme).
 
 You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
 
