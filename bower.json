@@ -5,7 +5,7 @@
   "authors": [
     "iwatakeshi <iwatakeshi@gmail.com>"
   ],
-  "description": "GitHub's Cayman theme for Doxx.",
+  "description": "A responsive theme for your Doxx generated documentations.",
   "moduleType": [
     "amd",
     "es6",
