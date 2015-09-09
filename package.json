@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "homepage": "http://github.com/iwatakeshi/doxx-theme-cayman",
   "author": "iwatakeshi",
+  "scripts":{
+    "start":"npm i && bower i"
+  },
   "devDependencies": {
     "browser-sync": "^2.9.1",
     "doxx": "file:doxx-2.0.0.tgz",
@@ -11,7 +14,7 @@
     "gulp-clipboard": "^0.1.1",
     "gulp-connect": "^2.2.0",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^2.0.4",
+    "gulp-ruby-sass": "^1.4.0",
     "gulp-shell": "^0.4.3",
     "gulp-uglify": "^1.4.0",
     "gulp-uglifycss": "^1.0.4",
