@@ -99,7 +99,8 @@ gulp.task('copy:css', ['docs'], function () {
   .pipe(uglifycss({
     'max-line-len': 80
   }))
-  .pipe(gulp.dest(test.docs.css.path));
+  .pipe(gulp.dest(test.docs.css.path))
+  .pipe(gulp.dest(assets.css.path));
 });
 
 // Create server
