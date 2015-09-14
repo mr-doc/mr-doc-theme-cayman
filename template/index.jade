@@ -14,8 +14,8 @@ html(lang='en-us')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', type='text/css')
     each file in files
       each target in targets
-        if file.name === target.name
-          if file.name === currentName
+        if file.name === target.file.name
+          if file.name === current.name
             link(rel='stylesheet', href=target.relative.path + 'css/bootstrap.css')
             link(rel='stylesheet', href=target.relative.path + 'css/cayman.css')
             link(rel='stylesheet', href=target.relative.path + 'css/prism.css')
@@ -35,14 +35,14 @@ html(lang='en-us')
           ul.nav.nav-stacked.fixed#sidebar
             each file in files
               each target in targets
-                if file.name === target.name
-                  li(class=(file.name !== currentName ? "":"active"))
-                    a(href=target.relative.path + file.relName) #{file.name}
-                      if file.name === currentName
+                if file.name === target.file.name
+                  li(class=(file.name !== current.name ? "":"active"))
+                    a(href=target.relative.path + file.relative.name) #{file.name}
+                      if file.name === current.name
                           ul.nav.nav-stacked
                             each symbol in symbols
                               li
-                                if name === currentName
+                                if name === current.name
                                   a(href='#'+symbol.name)
                                     mixin iForSymbolType(symbol)
                                     span #{symbol.name}
@@ -122,8 +122,8 @@ html(lang='en-us')
               | .
     each file in files
       each target in targets
-        if file.name === target.name
-          if file.name === currentName
+        if file.name === target.file.name
+          if file.name === current.name
             script(src=target.relative.path + 'js/jquery.min.js')
             script(src=target.relative.path + 'js/bootstrap.min.js')
             script(src=target.relative.path + 'js/affix.js')
