@@ -93,7 +93,7 @@ gulp.task('copy:js', ['docs'], function () {
 // Task 4: Copy the files from bower into css
 gulp.task('copy:css', ['docs'], function () {
   return gulp.src([
-    bower.prism.path + 'themes/prism.css'
+    bower.prism.path + 'themes/prism.css',
   ])
   .pipe(clipboard())
   .pipe(uglifycss({

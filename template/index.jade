@@ -15,9 +15,10 @@ html(lang='en-us')
     each file in files
       each target in targets
         if file.name === target.name
-          link(rel='stylesheet', href=target.relative.path + 'css/bootstrap.css')
-          link(rel='stylesheet', href=target.relative.path + 'css/cayman.css')
-          link(rel='stylesheet', href=target.relative.path + 'css/prism.css')
+          if file.name === currentName
+            link(rel='stylesheet', href=target.relative.path + 'css/bootstrap.css')
+            link(rel='stylesheet', href=target.relative.path + 'css/cayman.css')
+            link(rel='stylesheet', href=target.relative.path + 'css/prism.css')
   body
     section.page-header
       h1.project-name= project.title
@@ -29,7 +30,6 @@ html(lang='en-us')
       if(project.url.homepage)
         a.btn(href=project.url.homepage target='_blank')
     section(data-spy='scroll' data-target='.scrollspy').main-content
-      span #{console.log(targets)}
       .row
         .col-md-3.bs-docs-sidebar
           ul.nav.nav-stacked.fixed#sidebar
@@ -123,13 +123,14 @@ html(lang='en-us')
     each file in files
       each target in targets
         if file.name === target.name
-          script(src=target.relative.path + 'js/jquery.min.js')
-          script(src=target.relative.path + 'js/bootstrap.min.js')
-          script(src=target.relative.path + 'js/affix.js')
-          script(src=target.relative.path + 'js/dropdown.js')
-          script(src=target.relative.path + 'js/scrollspy.js')
-          script(src=target.relative.path + 'js/prism.js')
-          script(src=target.relative.path + 'js/prism-bash.js')
+          if file.name === currentName
+            script(src=target.relative.path + 'js/jquery.min.js')
+            script(src=target.relative.path + 'js/bootstrap.min.js')
+            script(src=target.relative.path + 'js/affix.js')
+            script(src=target.relative.path + 'js/dropdown.js')
+            script(src=target.relative.path + 'js/scrollspy.js')
+            script(src=target.relative.path + 'js/prism.js')
+            script(src=target.relative.path + 'js/prism-bash.js')
     script.
       $(document).ready(function(){
         $('body').scrollspy({
