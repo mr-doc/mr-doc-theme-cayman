@@ -1,6 +1,6 @@
 # Cayman theme
 
-Cayman is a clean, responsive theme for [Doxx](https://github.com/FGRibreau/doxx) and a fork from [Jason Long's Cayman](https://github.com/jasonlong/cayman-theme).
+Cayman is a clean, responsive theme for [Mr. Doc](https://github.com/mr-doc/mr-doc) and a fork from [Jason Long's Cayman](https://github.com/jasonlong/cayman-theme).
 
 You can preview the theme at [jasonlong.github.io/cayman-theme](http://jasonlong.github.io/cayman-theme) or with real content at [jasonlong.github.io/geo_pattern](http://jasonlong.github.io/geo_pattern).
 
@@ -34,10 +34,9 @@ $ gulp build
 # To develop, run:
 $ gulp
 ```
+** Notes **
 
-## Notes
-
-To build the test docs, this theme is using an unpublished version of Doxx.
+This theme is using an unpublished version of Mr. Doc.
 
 ## License
 
