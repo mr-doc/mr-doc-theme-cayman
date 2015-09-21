@@ -34,7 +34,7 @@ $ gulp build
 # To develop, run:
 $ gulp
 ```
-** Notes **
+**Notes**
 
 This theme is using an unpublished version of Mr. Doc.
 
