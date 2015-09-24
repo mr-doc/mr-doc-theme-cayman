@@ -25,7 +25,7 @@ html(lang='en-us')
       h2.project-tagline= project.description
       if(project.url.github)
         a.btn(href=project.url.github target='_blank') View on GitHub
-      if(project.url.npm && project.title != 'doxx-theme-cayman')
+      if(project.url.npm && project.title != 'mr-doc-theme-cayman')
         a.btn(href=project.url.npm target='_blank') View on npm
       if(project.url.homepage)
         a.btn(href=project.url.homepage target='_blank')
@@ -37,7 +37,7 @@ html(lang='en-us')
               each target in targets
                 if file.name === target.file.name
                   li(class=(file.name !== current.name ? "":"active"))
-                    a(href=target.relative.path + file.relative.name) #{file.name}
+                    a(href=target.path) #{file.name}
                       if file.name === current.name
                           ul.nav.nav-stacked
                             each symbol in symbols

@@ -54,7 +54,7 @@ var template = cmd.template + join(cwd, 'template/index.jade');
 
 // Task 1: Build the docs
 gulp.task('docs',shell.task([
-    './node_modules/mr-doc/bin/mr-doc ' + source + target + template + ' --kit '
+    './node_modules/.bin/mr-doc ' + source + target + template + ' --kit '
 ]));
 
 // Task 2: Build Sass and copy it into the test dir and assets
