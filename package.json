@@ -7,6 +7,9 @@
   "scripts": {
     "start": "npm i && bower i"
   },
+  "keywords":[
+    "mr-doc-theme"
+  ],
   "devDependencies": {
     "browser-sync": "^2.9.1",
     "doxx": "git+https://github.com/mr-doc/mr-doc.git#3.0.0",
