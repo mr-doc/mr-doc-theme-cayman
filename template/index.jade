@@ -31,7 +31,7 @@ html(lang='en-us')
         a.btn(href=project.url.homepage target='_blank')
     section(data-spy='scroll' data-target='.scrollspy').main-content
       .row
-        .col-md-3.bs-docs-sidebar
+        .col-md-3.col-xs-3.bs-docs-sidebar
           ul.nav.nav-stacked.fixed#sidebar
             each file in files
               each target in targets
@@ -136,5 +136,10 @@ html(lang='en-us')
         $('body').scrollspy({
           target: ".bs-docs-sidebar",
           offset: 40
+        });
+        $('#sidebar').affix({
+          offset:{
+            bottom:60
+          }
         }) 
       });
