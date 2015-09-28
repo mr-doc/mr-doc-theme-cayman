@@ -1,13 +1,13 @@
 {
   "name": "mr-doc-theme-cayman",
   "description": "A responsive Mr. Doc theme for your generated documentations.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "http://github.com/iwatakeshi/mr-doc-theme-cayman",
   "author": "iwatakeshi",
   "scripts": {
     "start": "npm i && bower i"
   },
-  "keywords":[
+  "keywords": [
     "mr-doc-theme"
   ],
   "devDependencies": {
