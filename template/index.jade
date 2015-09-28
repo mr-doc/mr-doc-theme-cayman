@@ -32,7 +32,7 @@ html(lang='en-us')
     section(data-spy='scroll' data-target='.scrollspy').main-content
       .row
         .col-md-3.col-xs-3.bs-docs-sidebar
-          ul.nav.nav-stacked.fixed#sidebar
+          ul.nav.nav-stacked#sidebar.fixed
             each file in files
               each target in targets
                 if file.name === target.file.name
@@ -139,7 +139,8 @@ html(lang='en-us')
         });
         $('#sidebar').affix({
           offset:{
-            bottom:60
+            bottom:60,
+            top: 60
           }
         }) 
       });
