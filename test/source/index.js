@@ -1,21 +1,27 @@
 /**
- * @class Doxx
+ * @class Car
+ * @example
+ * var honda = new Car("Honda");
  */
-class Doxx extends Compiler {
-	constructor(){
-
+class Car extends Vehicle {
+	constructor(make){
+			super(make);
 	}
 	/**
 	 * Generates the files
+	 * @example
+	 * honda.accelerate();
 	 */
-	generate (){
+	accelerate (){
 
 	}
 
 	/** 
 	 * Some other function
+	 * @example
+	 * honda.honk();
 	 */
-	fn () {
+	honk () {
 
 	}
 }

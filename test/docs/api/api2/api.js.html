@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>mr-doc-theme-cayman</title>
+    <title>mr-doc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css">
@@ -12,8 +12,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">mr-doc-theme-cayman</h1>
-      <h2 class="project-tagline">A responsive Mr. Doc theme for your generated documentations.</h2><a href="http://github.com/iwatakeshi/mr-doc-theme-cayman" target="_blank" class="btn">View on GitHub</a>
+      <h1 class="project-name">mr-doc</h1>
+      <h2 class="project-tagline">A responsive Mr. Doc theme for your generated documentations.</h2><a href="http://github.com/iwatakeshi/mr-doc-theme-cayman" target="_blank" class="btn">View on GitHub</a><a href="https://npmjs.com/package/mr-doc-theme-cayman" target="_blank" class="btn">View on npm</a>
     </section>
     <section data-spy="scroll" data-target=".scrollspy" class="main-content">
       <div class="row">
@@ -23,52 +23,58 @@
             <li><a href="../../api/api.js.html">api/api.js</a></li>
             <li class="active"><a href="../../api/api2/api.js.html">api/api2/api.js
                 <ul class="nav nav-stacked">
-                  <li><a href="#Doxx"><i class="alert alert-success"></i><span>Doxx</span></a>
+                  <li><a href="#Car"><i class="alert alert-success"></i><span>Car</span></a>
                   </li>
-                  <li><a href="#generate"><i class="alert alert-info"></i><span>generate</span></a>
+                  <li><a href="#accelerate"><i class="alert alert-info"></i><span>accelerate</span></a>
                   </li>
-                  <li><a href="#fn"><i class="alert alert-info"></i><span>fn</span></a>
+                  <li><a href="#honk"><i class="alert alert-info"></i><span>honk</span></a>
                   </li>
                 </ul></a></li>
             <li><a href="../../index.js.html">index.js</a></li>
           </ul>
         </div>
         <div class="col-md-9">
-          <section id="Doxx">
-            <h1>Doxx</h1>
+          <section id="Car">
+            <h1>Car</h1>
             <h5 class="subheader"></h5>
             <p>
-              <div class="label label-success radius ctx-type">class</div><span>&nbsp;</span><span>new Doxx()</span><span>&nbsp;</span><span>&nbsp;</span><span class="label label-default">extends</span><span>&nbsp;</span><span>Compiler</span>
+              <div class="label label-success radius ctx-type">class</div><span>&nbsp;</span><span>new Car()</span><span>&nbsp;</span><span>&nbsp;</span><span class="label label-default">extends</span><span>&nbsp;</span><span>Vehicle</span>
             </p>
           </section>
           <div class="description"></div>
-          <pre><code class="language-javascript">class Doxx extends Compiler {
-	constructor(){
-
+          <pre><code class="language-javascript">class Car extends Vehicle {
+	constructor(make){
+			super(make);
 	}</code></pre>
-          <section id="generate">
-            <h1>generate</h1>
+          <h3 style="color:grey">Example</h3>
+          <pre><code class="language-javascript">var honda = new Car("Honda");</code></pre>
+          <section id="accelerate">
+            <h1>accelerate</h1>
             <h5 class="subheader"></h5>
             <p>
-              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Doxx.prototype.generate()</span><span>&nbsp;</span>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Car.prototype.accelerate()</span><span>&nbsp;</span>
             </p>
           </section>
           <div class="description"><p>Generates the files</p></div>
-          <pre><code class="language-javascript">generate (){
+          <pre><code class="language-javascript">accelerate (){
 
 }</code></pre>
-          <section id="fn">
-            <h1>fn</h1>
+          <h3 style="color:grey">Example</h3>
+          <pre><code class="language-javascript">honda.accelerate();</code></pre>
+          <section id="honk">
+            <h1>honk</h1>
             <h5 class="subheader"></h5>
             <p>
-              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Doxx.prototype.fn()</span><span>&nbsp;</span>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Car.prototype.honk()</span><span>&nbsp;</span>
             </p>
           </section>
           <div class="description"><p>Some other function</p></div>
-          <pre><code class="language-javascript">fn () {
+          <pre><code class="language-javascript">honk () {
 
 }
 }</code></pre>
+          <h3 style="color:grey">Example</h3>
+          <pre><code class="language-javascript">honda.honk();</code></pre>
           <div class="footer site-footer">
             <div class="span site-footer-owner"><a href="https://github.com/mr-doc/mr-doc-theme-cayman">Cayman</a> is maintained by <a href="https://github.com/iwatakeshi">iwatakeshi</a>.</div>
             <div class="span site-footer-credits">This page was generated by <a href="https://github.com/mr-doc/mr-doc">Mr. Doc</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</div>
