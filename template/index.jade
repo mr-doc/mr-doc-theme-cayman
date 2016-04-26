@@ -77,7 +77,7 @@ html(lang='en-us')
                       if symbol.return
                         |  ->
                         span= symbol.return
-            if symbol.hasParams
+            if symbol.tags.length
               table.table.table-bordered.table-striped
                 thead
                   tr
